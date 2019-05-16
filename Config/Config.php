@@ -1,12 +1,12 @@
 <?php
-if(!defined('DS')){
-    define('DS',DIRECTORY_SEPARATOR);
-}
-if(!defined('ROOT')){
-    //define('ROOT',$_SERVER['DOCUMENT_ROOT']);//,str_replace('/','\\',$_SERVER['DOCUMENT_ROOT'])); //$_SERVER['DOCUMENT_ROOT'] = Pega a raiz do servidor
-    define('ROOT',str_replace('/','\\',$_SERVER['DOCUMENT_ROOT']));
-}
-if(!defined('SITE_ROOT')){
-    define('SITE_ROOT',ROOT.DS.'TrampoCasaRepouso' .DIRECTORY_SEPARATOR. 'site-casa-de-repouso');
-}
+// Todas as configuraçoes aqui
 
+namespace Config; //Agrupamento de classes
+// visando evitar o conflito entre nomes
+
+class Config{
+    public function __construct(){
+        date_default_timezone_set("America/Sao_Paulo");
+        setlocale(LC_ALL, 'pt_BR', 'pt_BR.utf-8', 'pt_BR.utf-8', 'portuguese'); 
+    }    
+}

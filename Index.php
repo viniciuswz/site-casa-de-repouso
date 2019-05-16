@@ -1,6 +1,6 @@
 <?php
 //session_start();
-// require_once('Config/Config.php');
+// require_once('Config/Define.php');
 // require_once(SITE_ROOT.DS.'autoload.php');  
 // use Classes\UrlAmigavel;
 // try{

@@ -1,8 +1,8 @@
 <?php
 namespace Db;
-use Config\CfAcademicoLogin; // Usar uma namespace
+use Config\Config; // Usar uma namespace
 
-class DbConnection extends CfAcademicoLogin{ //Extender de uma classe é com extends
+class DbConnection extends Config{ //Extender de uma classe é com extends
 
     private $conn;
     private $user = 'root';
@@ -17,13 +17,11 @@ class DbConnection extends CfAcademicoLogin{ //Extender de uma classe é com ext
         try{
             $this->conn = new \PDO("mysql:host=$this->host;port=$this->port;dbname=$this->database", $this->user, $this->pass); // Barra invertida significa q a classe nao é sua
             if(isset($this->conn)){
-                $this->conn->exec("set names utf8"); // Metodo utf-8
-                //$this->conn->exec("SET @@global.time_zone = '+3:00'");
+                $this->conn->exec("set names utf8"); // Metodo utf-8                
                 return $this->conn;
             }    
         
-        }catch(\PDOException $exc){
-            //echo $exc->getTraceAsString();
+        }catch(\PDOException $exc){            
             throw new \Exception($exc->getCode()); // Lançar o código do erro
         }
     }
@@ -43,7 +41,6 @@ class DbConnection extends CfAcademicoLogin{ //Extender de uma classe é com ext
             
         }
         
-        //$stm->lastInsertId();
         return $stm;
     }
 
