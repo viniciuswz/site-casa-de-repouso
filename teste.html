@@ -1,36 +1,4 @@
-<?php
-namespace Classes\Email;
-require_once "vendor/autoload.php";
-
-
-//Import PHPMailer classes into the global namespace
-
-use PHPMailer\PHPMailer\PHPMailer;
-
-class EmailMailer{
-
-        public function enviarEmailFalaConosco($emailUsuario, $assunto, $texto){
-                  
-          $destino = "$emailUsuario";
-          
-          $arquivo =  wordwrap($this->htmlEmailFaleConosco($assunto, $texto),70);
-          $assunto = "Casa de Repouso";
-          
-          $headers =  'MIME-Version: 1.0' . "\r\n"; 
-          $headers .= "From: Casa de Repouso <casaderepousonaweb.com>" . "\r\n";
-          $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
-          
-          $enviaremail = mail($destino, $assunto, $arquivo, $headers);
-          
-          
-          if(!$enviaremail){
-              throw new \Exception("Erro ao enviar email",312);
-          }
-        }
-    
-        public function htmlEmailFaleConosco($assunto, $textoDigitado){
-
-$html= '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <meta charset="UTF-8"/>
@@ -207,11 +175,13 @@ style="max-width: 90%; text-align: center;">
 <td style="font-family:Arial, Helvetica,
 sans-serif; font-size:16px">
 <strong style="font-size:22px; color: #303030">
-  '.$assunto.'
+  ASSUNTO
 </strong>
 <br><br><br>
 <span style="font-size: 12px; color: #292929">
-'.$textoDigitado.'
+texto que o cabron digitar
+texto que o cabron digitar
+texto que o cabron digitar
 </span>
 </td>
 </tr>
@@ -333,10 +303,3 @@ font-size: 0">
 
 </body>
 </html>
-';
-        return $html;
-            
-        }    
-
-        
-} 
