@@ -1,0 +1,158 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans');
+@import url('https://fonts.googleapis.com/css?family=Bree+Serif&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Open Sans', sans-serif;
+}
+a{
+    text-decoration: none
+}
+
+h1,h2,h3,h4,h5,h6{
+    font-family: 'Bree Serif', serif;
+}
+
+/* #DDDEE1  #94c2eb #0E171B */
+
+header{
+   
+    height: 80px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    width: 100%;
+    color:white;
+    opacity: 0;
+    
+}
+
+.mobile-close{
+    display: none !important;
+    color: azure;
+    font-size: 40px;
+    font-weight: bold;
+    
+    text-align: end;
+    width: 90%;
+    margin: 0 auto;
+    cursor: pointer;
+}
+
+header .fa-bars{
+    display: none;
+    color: white;
+    font-size: 30px;
+    margin-right: 20px ;
+}
+
+header a{
+    display: flex;
+    align-items: center;
+    max-width: 140px;
+    height: 80px;
+    margin-left: 10px; 
+    color: white
+}
+
+header a img{
+    align-self: center;
+    width: 100%;
+}
+
+nav.menu{
+    margin-right: 10px;
+}
+
+nav.menu ul{
+    display: flex;
+    list-style: none;
+}
+
+nav.menu a{
+    text-decoration: none;
+    color: white
+}
+
+
+nav.menu ul li{
+    display: block;
+    line-height: 80px;
+    height: 80px;
+    padding: 0 30px;
+    cursor: pointer;
+}
+
+nav.menu ul li:hover{
+    background-color: #7AB7C1
+}
+
+.banner {
+    background-image: url('../imagens/idosos-desk.jpg');
+    background-size: cover;
+    width: 100%;
+    position: fixed;
+    height: 600px;
+}
+
+.banner div{
+    color:white;
+    position: absolute;
+    bottom: 200px;
+    left: 70px;
+}
+
+
+.banner div h1{
+   font-size: 36px;
+   letter-spacing: 2px
+}
+
+.banner div p{
+   max-width: 600px
+ }
+main{
+    position: relative;
+    top: 600px;
+    background-color: white;
+    height: 1000px;
+    transition: 1s;
+    padding-top: 20px
+}
+
+.header-margin-top{
+    margin-top: 80px
+}
+
+.titulo-texto{
+    display: flex;
+    justify-content: center
+}
+
+.titulo-texto div{
+    max-width: 600px
+}
+
+.titulo-texto h1{
+    text-align: center;
+    color: #1b1616
+    
+}
+
+.titulo-texto hr{
+    height: 4px;
+    outline: none;
+    border: 0;
+    background-color: #94c2eb;
+    width: 340px;
+    margin: 5px auto;
+    
+    
+}
+.titulo-texto p{
+    
+}
