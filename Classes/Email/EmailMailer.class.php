@@ -1,11 +1,7 @@
 <?php
 namespace Classes\Email;
-require_once "vendor/autoload.php";
 
-
-//Import PHPMailer classes into the global namespace
 use Model\GenericaM;
-use PHPMailer\PHPMailer\PHPMailer;
 
 class EmailMailer extends GenericaM{
 
