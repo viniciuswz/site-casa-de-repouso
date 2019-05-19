@@ -4,23 +4,23 @@ require_once "vendor/autoload.php";
 
 
 //Import PHPMailer classes into the global namespace
-
+use Model\GenericaM;
 use PHPMailer\PHPMailer\PHPMailer;
 
-class EmailMailer{
+class EmailMailer extends GenericaM{
 
-        public function enviarEmailFalaConosco($emailUsuario, $assunto, $texto){
+        public function enviarEmailFalaConosco(){
                   
-          $destino = "$emailUsuario";
+          $destino = $this->getEmail();
           
-          $arquivo =  wordwrap($this->htmlEmailFaleConosco($assunto, $texto),70);
+          $arquivo =  wordwrap($this->htmlEmailFaleConosco($this->getAssunto(), $this->getTexto(), $this->getTelefone()),70);
           $assunto = "Casa de Repouso";
           
           $headers =  'MIME-Version: 1.0' . "\r\n"; 
           $headers .= "From: Casa de Repouso <casaderepousonaweb.com>" . "\r\n";
-          $headers .= 'Content-type: text/html; charset=iso-8859-1' . "\r\n";
+          $headers .= 'Content-type: text/html; charset=utf-8;' . "\r\n";
           
-          $enviaremail = mail($destino, $assunto, $arquivo, $headers);
+          $enviaremail = mail($destino, $this->getAssunto(), $arquivo, $headers);
           
           
           if(!$enviaremail){
@@ -28,7 +28,7 @@ class EmailMailer{
           }
         }
     
-        public function htmlEmailFaleConosco($assunto, $textoDigitado){
+        public function htmlEmailFaleConosco($assunto, $textoDigitado, $telefone){
 
 $html= '<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN">
 <html xmlns="http://www.w3.org/1999/xhtml">
@@ -206,6 +206,10 @@ style="max-width: 90%; text-align: center;">
 <tr>
 <td style="font-family:Arial, Helvetica,
 sans-serif; font-size:16px">
+<strong style="font-size:17px; color: #303030">
+  Telefone: '.$telefone.'
+</strong>
+<br><br>
 <strong style="font-size:22px; color: #303030">
   '.$assunto.'
 </strong>

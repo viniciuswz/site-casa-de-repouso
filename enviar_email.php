@@ -4,8 +4,42 @@ require_once('Config/Define.php');
 require_once(SITE_ROOT.DS.'autoload.php');  
 use Classes\Email\EmailMailer;
 
-$email = new EmailMailer();
-$email->enviarEmailFalaConosco($_POST["email"], $_POST["assunto"], $_POST['texto']);
+
+try{
+    $email = new EmailMailer();
+    $email->setEmail([
+        "vlr" => $_POST['email'],
+        "validacoes" => [
+            "not null"
+        ]
+    ]);
+    $email->setAssunto([
+        "vlr" => $_POST["assunto"],
+        "validacoes" => [
+            "not null",
+            "utf-8-email"
+        ]
+    ]);
+    $email->setTexto([
+        "vlr" => $_POST['texto'],
+        "validacoes" => [
+            "not null",
+            "utf-8-email"
+        ]
+    ]);
+    $email->setTelefone([
+        "vlr" => $_POST['telefone'],
+        "validacoes" => [
+            "not null"
+        ]
+    ]);
+    $email->enviarEmailFalaConosco();
+}catch(Exception $exc){
+    echo $exc->getMessage();
+}
+
+
+
 
 // use Classes\UrlAmigavel;
 // try{

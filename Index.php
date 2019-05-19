@@ -4,6 +4,7 @@
 <form action="enviar_email.php" method="post">
     <div class="agrupa-todo-mundo">
         <input type="email" placeholder="Digite seu email" name="email" required>
+        <input type="text" placeholder="Digite seu telefone" name="telefone" required>
         <input type="text" placeholder="Digite um assunto" name="assunto" required>
         <textarea placeholder="digite o conteudo do seu email" name="texto" required></textarea>
         <button type="submit">Enviar</button>
