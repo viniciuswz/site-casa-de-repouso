@@ -41,7 +41,7 @@ class GenericaM extends DbConnection{
                                 $resultado = $this->{"fix" . str_replace(" ", "", $vlr)}(["vlr" => $dados['vlr']]);
                                 $indValido[] = $resultado['indValidacao']; // chama funcao dinamicamente                                
                                 if($resultado['vlr'] != null){ // esta me retornando os dados validados
-                                    echo $dados['vlr'] = $resultado['vlr'] . "aqui";
+                                    $dados['vlr'] = $resultado['vlr'];
                                 } 
                                 break;
                             // para criar uma nova validacaoes é só criar um novo case, com o nome e depois copiar a linha de cima 
