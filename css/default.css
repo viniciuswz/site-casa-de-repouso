@@ -112,14 +112,14 @@ nav.menu ul li:hover{
 .banner div{
     color:white;
     position: absolute;
-    bottom: 200px;
+    bottom: 220px;
     left: 70px;
 }
 
 
 .banner div h1{
-   font-size: 36px;
-   letter-spacing: 2px
+   font-size: 50px;
+   letter-spacing: 2px;
 }
 
 .banner div p{
@@ -142,32 +142,30 @@ main{
 .titulo-texto{
     display: flex;
     justify-content: center;
-   margin-top: 10px
+    /* margin-top: 10px; */
 }
 
 .titulo-texto div{
-    max-width: 600px
+    /* max-width: 600px */
 }
 
 .titulo-texto h1{
     text-align: center;
     color: #1b1616;
-    
-    
+    font-size: 50px;
 }
 
 .titulo-texto hr{
-    height: 4px;
+    height: 5px;
     outline: none;
     border: 0;
     background-color: #94c2eb;
-    width: 340px;
+    width: 456px;
     margin: 5px auto;
-    
-    
 }
 .titulo-texto p{
     
+max-width: 600px;
 }
 
 .paralax{
@@ -201,17 +199,23 @@ main{
     width: 100%
 }
 
-.sobre h4{
-
-width: 100%;
-
-text-align: center;
+.sobre > h4{
+    color: cadetblue;
+    width: 100%;
+    text-align: center;
+    margin-top: 80px
+    
 }
 
 .sobre > h1{
-    
-text-align: center;
+    text-align: center;
+    width: 100%;
+    color: #010129;
+    font-size: 50px;
+    margin-bottom: 80px;
+    line-height: 50px;
 }
+
 .sobre .container{
     justify-content: space-around;
     position: relative;
