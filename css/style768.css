@@ -73,3 +73,24 @@ nav.menu ul li{
     width: 90%;
     margin: 0 auto
 }
+
+
+.sobre .container{
+
+    flex-direction: column;
+    align-items: center
+}
+
+.sobre{
+    height: auto;
+    height: 1500px;
+}
+
+.titulo-texto h1{
+    font-size: 40px
+}
+
+.titulo-texto p{
+    max-width: 90%;
+    margin: 0 auto
+}
