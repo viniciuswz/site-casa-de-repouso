@@ -86,3 +86,23 @@ nav.menu ul li{
     max-width: 90%;
     margin: 0 auto
 }
+
+.banner div h1 {
+    font-size: 35px;
+}
+
+.titulo-texto h1{
+    font-size: 35px
+}
+
+.sobre > h1{
+    font-size: 40px
+}
+
+.galeria > h1{
+    font-size: 40px
+}
+
+.depoimentos h1{
+    font-size: 35px
+}
