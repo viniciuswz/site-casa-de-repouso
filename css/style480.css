@@ -67,6 +67,24 @@ nav.menu ul li{
     height: auto;
 }
 
+
+.banner div{
+    width: 100%;
+    left: 0;
+    bottom: 30%;
+}
+
+.banner div h1{
+    width: 90%;
+    margin: 0 auto;
+    text-align: center
+}
+
+.banner div p{
+    width: 90%;
+    margin: 0 auto
+}
+
 .sobre .container{
 
     flex-direction: column;
@@ -75,7 +93,11 @@ nav.menu ul li{
 
 .sobre{
     height: auto;
-    height: 1500px;
+    height: 1550px;
+}
+
+.sobre .crop-sobre{
+    height: 300px;
 }
 
 .titulo-texto h1{
@@ -103,6 +125,43 @@ nav.menu ul li{
     font-size: 40px
 }
 
+.galeria figure {
+    width: 150px;
+    height: 150px;
+}
+
 .depoimentos h1{
     font-size: 35px
+}
+.contato h1{
+    font-size: 35px
+}
+
+footer{
+    background-color: #241e1e;
+    color: white;
+    display: flex;
+    justify-content: space-around;
+    padding: 20px;
+    flex-wrap: wrap
+
+}
+
+footer a{
+    color: white;
+    text-decoration: underline;
+    flex-grow: 0;
+    text-align: center;
+}
+footer p{
+    flex-grow: 0;
+    margin-bottom: 5px;
+}
+
+section hr{
+    width: 80% !important
+}
+
+.contato h1 > p{
+    width: 80%
 }

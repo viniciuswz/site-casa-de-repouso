@@ -101,7 +101,21 @@ nav.menu ul li{
 .galeria > h1{
     font-size: 40px
 }
+.galeria figure {
+    width: 150px;
+    height: 150px;
+}
 
 .depoimentos h1{
     font-size: 35px
 }
+
+.contato h1{
+    font-size: 35px
+}
+
+.titulo-texto p{
+    width: 85%;
+    margin:0 auto
+}
+
