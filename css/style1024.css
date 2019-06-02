@@ -7,3 +7,22 @@
 @media only screen and (min-width:769px) and (max-width:1000px){
 
 }
+.banner div h1 {
+    font-size: 45px;
+}
+
+.titulo-texto h1{
+    font-size: 40px
+}
+
+.sobre > h1{
+    font-size: 45px
+}
+
+.galeria > h1{
+    font-size: 45px
+}
+
+.depoimentos h1{
+    font-size: 40px
+}

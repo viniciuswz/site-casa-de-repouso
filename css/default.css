@@ -317,3 +317,51 @@ font-size:  17px
     
    
 }
+
+.galeria{
+display: flex;
+justify-content: center;
+flex-wrap: wrap
+}
+
+.galeria figure{
+    margin: 10px;
+    overflow: hidden;
+    width: 400px;
+    height: 400px;
+}
+
+.galeria figure a{
+    
+}
+
+.galeria figure a img{
+    width: 100%
+}
+
+.galeria figure figcaption{
+    display: none
+}
+
+.galeria > h4{
+    color: cadetblue;
+    width: 100%;
+    text-align: center;
+    margin-top: 80px
+    
+}
+
+.galeria > h1{
+    text-align: center;
+    width: 100%;
+    color: #010129;
+    font-size: 50px;
+    margin-bottom: 80px;
+    line-height: 50px;
+}
+
+.box-galeria{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap
+}
