@@ -68,6 +68,10 @@ jQuery(function($){
             $('html, body').animate({scrollTop: $('.'+this.id).offset().top - 80}, 'slow');
             
         })
+
+        $(document).on('click','.go-to-contact',function(){
+            $('html, body').animate({scrollTop: $('.contato').offset().top - 50}, 'slow')
+        })
     });
     
     
