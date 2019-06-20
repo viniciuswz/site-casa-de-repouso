@@ -81,7 +81,8 @@ class GenericaM extends DbConnection{
                 break;
         }  
         
-    }    
+    }   
+     
     public function getValores(){
         return $this->dadosAtributos;
     }

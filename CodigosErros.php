@@ -2,6 +2,7 @@
 $erros = [
     "10" => "Erro ao enviar a imagem -> TratarImg.class.php",
     "12" => "Faltando informações -> ValidarCampos.class.php",
+    "25" => "Parâmetros incompletos -> Config.class.php",
     "312" => "Erro ao enviar email -> EmailMailer.class.php",
     "720" => [
         "É necessário setar os dados como Array para a propiedade",
