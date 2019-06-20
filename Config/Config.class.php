@@ -37,4 +37,9 @@ class Config{
         return $tirarEspacos;        
     }
 
+    /* Gerar Hash */
+    public function gerarHash($senha){
+        return password_hash($senha, PASSWORD_DEFAULT, array("cost"=>12));
+    }
+
 }
