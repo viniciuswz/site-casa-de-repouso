@@ -30,4 +30,11 @@ class Config{
         }
     }
 
+    /* Tirar Acentuação */
+    public function tirarAcentos($palavra){ // Tirar acentos de palavras
+        $semAcento = strtolower(preg_replace( '/[`^~\'"]/', null, iconv( 'UTF-8', 'ASCII//TRANSLIT', $palavra )));       
+        $tirarEspacos = str_replace(" ", "", $semAcento);
+        return $tirarEspacos;        
+    }
+
 }
