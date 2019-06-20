@@ -42,4 +42,19 @@ class Config{
         return password_hash($senha, PASSWORD_DEFAULT, array("cost"=>12));
     }
 
+    /* Gerar in() Banco de Dados */
+    public function gerarIn($tipos = array()){
+        $in = "in( ";
+        $contador = 1;
+        foreach ($tipos as $valor){
+            if($contador == count($tipos)){
+                $in.= "'$valor'" . ' )';
+            }else{
+                $in.= "'$valor'".', ';
+            }
+            $contador++;            
+        }
+        return $in;
+    }
+
 }
