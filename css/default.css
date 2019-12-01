@@ -19,7 +19,7 @@ a{
     text-decoration: none;
 }
 
-h1,h2,h3,h4,h5,h6{
+h3,h2,h3,h4,h5,h6{
     font-family: 'Bree Serif', serif;
 }
 
@@ -108,6 +108,12 @@ nav.menu ul li:hover{
     background-color: #7AB7C1
 }
 
+nav.menu ul li h2{
+    font-size: inherit;
+    font-family: inherit;
+    font-weight: inherit
+}
+
 .banner {
     background-image: url('../imagens/idosos-desk.jpg');
     background-size: cover;
@@ -126,7 +132,7 @@ nav.menu ul li:hover{
 }
 
 
-.banner div h1{
+.banner div h3{
    font-size: 50px;
    letter-spacing: 2px;
 }
@@ -159,10 +165,17 @@ main{
     /* max-width: 600px */
 }
 
-.titulo-texto h1{
+.titulo-texto h3{
     text-align: center;
     color: #1b1616;
     font-size: 50px;
+}
+
+.titulo-texto h1{
+    text-align: center;
+    width: 95%;
+    margin: 0 auto;
+    text-shadow: 1px 1px 8px black
 }
 
 .titulo-texto hr{
@@ -190,7 +203,7 @@ font-size:  17px
     align-items: center
 }
 
-.paralax h1{
+.paralax h3{
     color: white;
    
 }
@@ -218,7 +231,7 @@ font-size:  17px
     
 }
 
-.sobre > h1{
+.sobre > h3{
     text-align: center;
     width: 100%;
     color: #010129;
@@ -244,7 +257,7 @@ font-size:  17px
 
 .sobre .item-sobre h4{color: cadetblue;}
 
-.sobre .item-sobre h1{line-height: 20px;margin: 20px 0;color: #010129;}
+.sobre .item-sobre h5{line-height: 20px;margin: 20px 0;color: #010129; font-size: 24px}
 
 .sobre .item-sobre p{
 
@@ -263,7 +276,7 @@ font-size:  17px
 
 }
 
-.depoimentos h1{
+.depoimentos h3{
     width: 100%;
     text-align: center;
     font-size: 50px;
@@ -334,8 +347,8 @@ font-size:  17px
 .galeria figure{
     margin: 10px;
     overflow: hidden;
-    width: 400px;
-    height: 400px;
+    width: 318px;
+    height: 243px;
 }
 
 .galeria figure a{
@@ -358,7 +371,7 @@ font-size:  17px
     
 }
 
-.galeria > h1{
+.galeria > h3{
     text-align: center;
     width: 100%;
     color: #010129;
@@ -367,7 +380,7 @@ font-size:  17px
     line-height: 50px;
 }
 
-.galeria h1 + p{
+.galeria h3 + p{
     text-align: center;
     width: 100%;
     color: #010129;
@@ -389,15 +402,15 @@ font-size:  17px
     margin-top: 15px
 }
 
-.contato h1{
+.contato h3{
     font-size: 50px;
     color: white;
 }
-.contato h1 + p{
+.contato h3 + p{
     max-width: 90%;
 }
 
-.contato h1,.contato p,.contato h4{
+.contato h3,.contato p,.contato h4{
     width: 100%;
     text-align: center;
 }
@@ -428,6 +441,7 @@ font-size: 22px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
+    opacity: 0;
 }
 
 .contato div.social a{
@@ -475,6 +489,17 @@ font-size: 22px;
 
 .contato div.call i{
     margin-right: 10px;
+}
+
+.contato .mapa{
+    width: 100%
+}
+
+.contato .mapa iframe{
+    display: block;
+    width: 100%;
+    max-width: 1024px;
+    margin: 0 auto;
 }
 
 footer{

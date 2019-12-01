@@ -74,7 +74,7 @@ nav.menu ul li{
     bottom: 30%;
 }
 
-.banner div h1{
+.banner div h3{
     width: 90%;
     margin: 0 auto;
     text-align: center
@@ -93,14 +93,19 @@ nav.menu ul li{
 
 .sobre{
     height: auto;
-    height: 1550px;
+    height: 1363px;
+}
+
+.sobre .item-sobre{
+    width: 290px;
+    padding: 40px 15px;
 }
 
 .sobre .crop-sobre{
     height: 300px;
 }
 
-.titulo-texto h1{
+.titulo-texto h3{
     font-size: 40px
 }
 
@@ -109,31 +114,31 @@ nav.menu ul li{
     margin: 0 auto
 }
 
-.banner div h1 {
+.banner div h3 {
     font-size: 35px;
 }
 
-.titulo-texto h1{
+.titulo-texto h3{
     font-size: 35px
 }
 
-.sobre > h1{
+.sobre > h3{
     font-size: 40px
 }
 
-.galeria > h1{
+.galeria > h3{
     font-size: 40px
 }
 
 .galeria figure {
-    width: 150px;
-    height: 150px;
+    width: 130px;
+    height: 98px;
 }
 
-.depoimentos h1{
+.depoimentos h3{
     font-size: 35px
 }
-.contato h1{
+.contato h3{
     font-size: 35px
 }
 
@@ -162,6 +167,6 @@ section hr{
     width: 80% !important
 }
 
-.contato h1 > p{
+.contato h3 > p{
     width: 80%
 }

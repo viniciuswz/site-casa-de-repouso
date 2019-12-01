@@ -63,7 +63,7 @@ nav.menu ul li{
     bottom: 30%;
 }
 
-.banner div h1{
+.banner div h3{
     width: 90%;
     margin: 0 auto;
     text-align: center
@@ -86,19 +86,19 @@ nav.menu ul li{
     height: 1500px;
 }
 
-.banner div h1 {
+.banner div h3 {
     font-size: 40px;
 }
 
-.titulo-texto h1{
+.titulo-texto h3{
     font-size: 35px
 }
 
-.sobre > h1{
+.sobre > h3{
     font-size: 40px
 }
 
-.galeria > h1{
+.galeria > h3{
     font-size: 40px
 }
 .galeria figure {
@@ -106,11 +106,11 @@ nav.menu ul li{
     height: 150px;
 }
 
-.depoimentos h1{
+.depoimentos h3{
     font-size: 35px
 }
 
-.contato h1{
+.contato h3{
     font-size: 35px
 }
 
